@@ -6,15 +6,21 @@ function CardTrilha(props) {
     
     return (
         <div className="card">
-            <img src={urlImg} height="240px" width="400px" /> 
+            <img src={urlImg} height="350px" width="400px" /> 
             <div>
                 <h2>{nome} - {cidade} / {estado}</h2>
-                <p>Por: {criador}</p>
-                <div>
-                    <p>Duração: {duracao} min</p>
-                    <p>Trajeto: {trajeto} km</p>
-                    <p>Tipo: {tipo}</p>
-                    <span>{dificuldade}</span>
+                <div className='creater'>
+                    <p>Por: {criador}</p>
+                </div>
+                <div className='info'>
+                    <div>
+                        <p>Duração: {duracao} min</p>
+                        <p>Trajeto: {trajeto} km</p>
+                        <p>Tipo: {tipo}</p>
+                    </div>
+                    <div>
+                        <span className='dificulty'>{dificuldade}</span>
+                    </div>
                 </div>
             </div>
         </div>

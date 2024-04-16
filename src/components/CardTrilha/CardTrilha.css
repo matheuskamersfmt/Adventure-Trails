@@ -1,5 +1,36 @@
 .card {
     display: flex;
     gap: 1rem;
-    height: calc(100vh - 140px);
+    height: auto;
+    padding: 1rem;
+    width: 100%;
   }
+
+.creater {
+  display: flex;
+  justify-content: end;
+  margin: 8px 0px;
+}
+
+.ifno {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info p {
+    margin: 8px 0;
+    color: #5C6670;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 1%;
+}
+
+.dificulty {
+    background-color: #EFF0F0;
+    padding: 6px 8px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 32px;
+}
