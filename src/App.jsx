@@ -1,4 +1,4 @@
-import Card from './components/Card/Card.jsx';
+import Card from './components/CardTrilha/CardTrilha.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import './App.css'
