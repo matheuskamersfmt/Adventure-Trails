@@ -1,0 +1,48 @@
+{
+    "trilhas": [
+        {
+            "nome": "Trilha da Lagoinha do Leste",
+            "cidade": "Florianópolis",
+            "estado": "SC",
+            "duracao": 120,
+            "trajeto": 7,
+            "dificuldade": "Difícil",
+            "tipo": "Praia",
+            "criador": "Matheus Kamers",
+            "urlImg": "https://static.wixstatic.com/media/29a16b_74889ef7dfb948f98d1332313c6f3432~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/29a16b_74889ef7dfb948f98d1332313c6f3432~mv2.jpg"
+        },
+        {
+            "nome": "Trilha da Costa da Lagoa",
+            "cidade": "Florianópolis",
+            "estado": "SC",
+            "duracao": 140,
+            "trajeto": 7.5,
+            "dificuldade": "Moderada",
+            "tipo": "Mata",
+            "criador": "Matheus Kamers",
+            "urlImg": "https://trilhasemsc.com.br/public/img/trilhas/descricao/trilha-da-costa-da-lagoa/entrada-da-trilha.jpg"
+        },
+        {
+            "nome": "Trilha da Praia dos Naufragados",
+            "cidade": "Florianópolis",
+            "estado": "SC",
+            "duracao": 60,
+            "trajeto": 3,
+            "dificuldade": "Fácil",
+            "tipo": "Praia",
+            "criador": "Matheus Kamers",
+            "urlImg": "https://viajapinha.com.br/wp-content/uploads/2017/11/comeco-da-trilha.png"
+        },
+        {
+            "nome": "Trilha da Galheta",
+            "cidade": "Florianópolis",
+            "estado": "SC",
+            "duracao": 15,
+            "trajeto": 0.5,
+            "dificuldade": "Fácil",
+            "tipo": "Praia",
+            "criador": "Matheus Kamers",
+            "urlImg": "https://s1.wklcdn.com/image_193/5813786/51358296/34073482Master.jpg"
+        }
+    ]
+}
