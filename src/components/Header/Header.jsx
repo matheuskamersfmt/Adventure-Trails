@@ -1,9 +1,10 @@
 import './Header.css';
+import header from '../../assets/header.jpg';
 
 function Header() {
-    return (
+    return (<>
         <div className="header">
-            <div>
+            <div className='logo'>
                 Adventure Trails FD
             </div>
             <div>
@@ -13,6 +14,8 @@ function Header() {
                 </nav>    
             </div>
         </div>
+        <img src={header} className='image-header' />
+        </>
     )
 }
 

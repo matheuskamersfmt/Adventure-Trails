@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <h1 className='title-home'>Explore trilhas incríveis</h1>
       <div className='container'>
           {trails.map((trail, index) => (
             <CardTrilha

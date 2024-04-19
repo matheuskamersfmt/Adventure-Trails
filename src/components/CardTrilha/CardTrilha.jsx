@@ -1,14 +1,20 @@
 import './CardTrilha.css';
 import PropTypes from 'prop-types';
+import heart from '../../assets/heart.png';
 
 function CardTrilha(props) {
     const {nome, cidade, estado, duracao, trajeto, dificuldade, tipo, criador, urlImg} = props;
     
     return (
         <div className="card">
-            <img src={urlImg} height="350px" width="400px" /> 
-            <div>
-                <h2>{nome} - {cidade} / {estado}</h2>
+            <div className='div-image'>
+            <img src={urlImg} /> 
+            </div>
+            <div className='div-text'>
+                <div className='title-card'>
+                    <h5>{nome} - {cidade} / {estado}</h5>
+                    <img src={heart} height='20px' width='20px' />
+                </div>
                 <div className='creater'>
                     <p>Por: {criador}</p>
                 </div>
@@ -18,7 +24,7 @@ function CardTrilha(props) {
                         <p>Trajeto: {trajeto} km</p>
                         <p>Tipo: {tipo}</p>
                     </div>
-                    <div>
+                    <div className='div-dificulty'>
                         <span className='dificulty'>{dificuldade}</span>
                     </div>
                 </div>

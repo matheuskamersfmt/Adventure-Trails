@@ -4,9 +4,19 @@
     align-items: center;
     padding: 1rem 3rem;
     background-color: #504908;
-    border-bottom: 1px solid #e9ecef;
+    /* border-bottom: 1px solid #e9ecef; */
     color: #ffffff;
     height: 80px;
+  }
+
+  .image-header {
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+
+  .logo,
+  .navigation a {
+    cursor: pointer;
   }
   
   .navigation {
