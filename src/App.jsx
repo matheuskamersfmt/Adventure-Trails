@@ -1,26 +1,32 @@
 import CardTrilha from './components/CardTrilha/CardTrilha.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import useTrails from './hooks/useTrails.js';
 import './App.css'
 
 function App() {
 
+  const [ trails ] = useTrails('/trilhas.json');
+  console.log(trails)
 
   return (
     <>
       <Header />
       <div className='container'>
-          <CardTrilha
-            nome='Trilha da Lagoinha do Leste'
-            cidade='Florianópolis'
-            estado='SC'
-            duracao={120}
-            trajeto={7}
-            dificuldade='Difícil'
-            tipo='Praia'
-            criador='Matheus Kamers'
-            urlImg='https://static.wixstatic.com/media/29a16b_74889ef7dfb948f98d1332313c6f3432~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/29a16b_74889ef7dfb948f98d1332313c6f3432~mv2.jpg'
-          />
+          {trails.map((trail, index) => (
+            <CardTrilha
+              key={index}
+              nome={trail.nome}
+              cidade={trail.cidade}
+              estado={trail.estado}
+              duracao={trail.duracao}
+              trajeto={trail.trajeto}
+              dificuldade={trail.dificuldade}
+              tipo={trail.tipo}
+              criador={trail.criador}
+              urlImg={trail.urlImg}
+            />
+          ))}
       </div>
       <Footer />
     </>
