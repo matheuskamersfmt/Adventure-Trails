@@ -1,10 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
-
 import App from "../App";
 import Home from '../pages/Home';
 import Cadastro from '../pages/Cadastro';
 import Lista from '../pages/Lista';
 
+
+// Rotas cadastradas
 const routes = createBrowserRouter([
     {
         path: '/',
