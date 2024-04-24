@@ -2,6 +2,8 @@ import Header from '../../components/Header/Header.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import CardTrilha from '../../components/CardTrilha/CardTrilha.jsx';
 import useTrails from '../../hooks/useTrails.js';
+import styles from './Lista.module.css';
+import imgtrilha from "../../assets/imgtrilha.png"
 
 function Lista() {
 
@@ -11,7 +13,9 @@ function Lista() {
     return (
         <>
         <Header />
-        <div className='container'>
+        <img src={imgtrilha} className={styles.imgList} />
+        <h1 className={styles.titleList}>Explore trilhas incríveis</h1>
+        <div className={styles.container}>
             {trails.map((trail, index) => (
               <CardTrilha
                 key={index}
