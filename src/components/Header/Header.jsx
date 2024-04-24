@@ -1,5 +1,4 @@
 import './Header.css';
-import header from '../../assets/header.jpg';
 
 function Header() {
     return (<>
@@ -14,7 +13,6 @@ function Header() {
                 </nav>    
             </div>
         </div>
-        <img src={header} className='image-header' />
         </>
     )
 }

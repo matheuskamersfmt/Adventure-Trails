@@ -1,3 +1,5 @@
+// import styles from './Cadastro.module.css';
+
 function Cadastro() {
     return (
         <div>

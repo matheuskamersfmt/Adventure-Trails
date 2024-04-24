@@ -9,11 +9,6 @@
     height: 80px;
   }
 
-  .image-header {
-    width: 100%;
-    height: calc(100vh - 80px);
-  }
-
   .logo,
   .navigation a {
     cursor: pointer;
