@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
 import imgTrilha from "../../assets/imgtrilha.png";
 import styles from "./Home.module.css";
 import sharePic from "../../assets/sharePic.png"
@@ -7,7 +5,6 @@ import sharePic from "../../assets/sharePic.png"
 function Home() {
   return (
     <>
-      <Header />
       <div className={styles.divImage}>
         <img src={imgTrilha} className={styles.imageHeader} />
         <div className={styles.textHeader}>
@@ -45,7 +42,6 @@ function Home() {
             <img src={sharePic} className={styles.shareImg} />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
