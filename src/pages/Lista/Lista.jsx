@@ -1,19 +1,19 @@
 import CardTrilha from '../../components/CardTrilha/CardTrilha.jsx';
-import useTrails from '../../hooks/useTrails.js';
 import styles from './Lista.module.css';
 import imgtrilha from "../../assets/imgtrilha.png"
+import { useContext } from 'react';
+import { TrilhasContext } from '../../context/TrilhasContext';
 
 function Lista() {
 
-    const [ trails ] = useTrails('/trilhas.json');
-    console.log(trails)
+    const { trilhas } = useContext(TrilhasContext);
 
     return (
         <>
         <img src={imgtrilha} className={styles.imgList} />
         <h1 className={styles.titleList}>Explore trilhas incríveis</h1>
         <div className={styles.container}>
-            {trails.map((trail, index) => (
+            {trilhas?.map((trail, index) => (
               <CardTrilha
                 key={index}
                 nome={trail.nome}
