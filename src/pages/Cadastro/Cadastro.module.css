@@ -6,7 +6,7 @@
     /* background-image: url("../../assets/imgtrilha.png");
     background-size: cover; */
     background-color: #cce2c9;
-    height: calc(100vh - 138px);
+    min-height: calc(100vh - 138px);
   }
 
 .container {
@@ -40,4 +40,15 @@ button {
 
 .cancelButton {
     border: 2px solid #504908;
+    background-color: #cce2c9;
+}
+
+.cancelButton a {
+    color: #504908;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
 }
