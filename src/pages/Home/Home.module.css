@@ -45,6 +45,11 @@
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .containerTexts {
     padding: 0px 84px;
     text-align: left;

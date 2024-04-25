@@ -9,9 +9,11 @@
     height: 80px;
   }
 
-  .logo,
+  .logo a,
   .navigation a {
     cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
   }
   
   .navigation {

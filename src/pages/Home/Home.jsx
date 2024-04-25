@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import imgTrilha from "../../assets/imgtrilha.png";
 import styles from "./Home.module.css";
 import sharePic from "../../assets/sharePic.png"
@@ -15,7 +16,7 @@ function Home() {
             Prepare-se para explorar novos horizontes e se conectar com a
             natureza através do Adventure Trails!
           </p>
-          <button>Explorar trilhas</button>
+          <button><Link to="/lista">Explorar trilhas</Link></button>
         </div>
       </div>
       <div className={styles.containerTexts}>
@@ -31,13 +32,13 @@ function Home() {
             dicas úteis para uma experiência eco-friendly.
           </p>
           <div className={styles.exploreButton}>
-            <button>Explorar trilhas</button>
+            <button><Link to="/lista">Explorar trilhas</Link></button>
           </div>
         </div>
         <div className={styles.sharePic}>
           <div className={styles.shareText}>
             <h1>Compartilhe fotos, dicas e localização das suas trilhas favoritas</h1>
-            <button>Cadastrar nova trilha</button>
+            <button><Link to="/cadastro">Cadastrar nova trilha</Link></button>
           </div>
             <img src={sharePic} className={styles.shareImg} />
         </div>
