@@ -56,7 +56,6 @@ function Cadastro() {
   ];
 
   function onSubmit(formValue) {
-    console.log(formValue);
     addTrilha(formValue)
   }
 
