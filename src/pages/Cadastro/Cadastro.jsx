@@ -1,15 +1,16 @@
-// import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { Grid, TextField, Select, MenuItem, InputLabel } from "@mui/material";
 import styles from "./Cadastro.module.css";
+import { useContext } from "react";
+import { TrilhasContext } from "../../context/TrilhasContext";
 
 function Cadastro() {
-//   const [novaTrilha, setNovaTrilha] = useState();
+  const { addTrilha } = useContext(TrilhasContext)
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    // formState: { errors },
   } = useForm();
 
   const ufs = [
@@ -44,22 +45,19 @@ function Cadastro() {
   ];
 
   const dificuldades = [
-    { label: "Iniciante", value: "iniciante" },
-    { label: "Intermediário", value: "intermediario" },
-    { label: "Difícil", value: "dificil" },
+    { label: "Iniciante", value: "Iniciante" },
+    { label: "Intermediário", value: "Intermediario" },
+    { label: "Difícil", value: "Difícil" },
   ];
 
   const tipos = [
-    { label: "Caminhada", value: "caminhada" },
-    { label: "Trekking", value: "trekking" },
+    { label: "Caminhada", value: "Caminhada" },
+    { label: "Trekking", value: "Trekking" },
   ];
 
   function onSubmit(formValue) {
     console.log(formValue);
-    console.log(errors)
-
-
-    // abaixo colocar função de add(formValue)
+    addTrilha(formValue)
   }
 
   
@@ -91,9 +89,9 @@ function Cadastro() {
                   maxLength: { value: 100, message: "Nome muito longo" },
                 })}
               />
-            {errors?.nome && (
+            {/* {errors?.nome && (
               <p className={styles.errorMessage}>{errors.nome.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -108,9 +106,9 @@ function Cadastro() {
                   maxLength: { value: 4, message: "Tempo acima do limite" },
                 })}
               />
-              {errors?.duracao && (
+              {/* {errors?.duracao && (
                 <p className={styles.errorMessage}>{errors.duracao.message}</p>
-              )}
+              )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -125,9 +123,9 @@ function Cadastro() {
                   maxLength: { value: 5, message: "Trajeto acima do limite" },
                 })}
               />
-            {errors?.trajeto && (
+            {/* {errors?.trajeto && (
               <p className={styles.errorMessage}>{errors.trajeto.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -145,9 +143,9 @@ function Cadastro() {
                   },
                 })}
               />
-            {errors?.cidade && (
+            {/* {errors?.cidade && (
               <p className={styles.errorMessage}>{errors.cidade.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -169,9 +167,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {errors?.estado && (
+            {/* {errors?.estado && (
               <p className={styles.errorMessage}>{errors.estado.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -186,9 +184,9 @@ function Cadastro() {
                   maxLength: { value: 60, message: "Nome muito longo" },
                 })}
               />
-            {errors?.criador && (
+            {/* {errors?.criador && (
               <p className={styles.errorMessage}>{errors.criador.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={6}>
@@ -200,7 +198,7 @@ function Cadastro() {
                 fullWidth
                 {...register("dificuldade", {
                   required: "Insira uma dificuldade válida",
-                  maxLength: { value: 10, message: "Dificuldade inválida" },
+                  maxLength: { value: 20, message: "Dificuldade inválida" },
                 })}
               >
                 {dificuldades.map((dificuldade) => (
@@ -209,9 +207,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {errors?.dificuldade && (
+            {/* {errors?.dificuldade && (
               <p className={styles.errorMessage}>{errors.dificuldade.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={12}>
@@ -232,9 +230,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {errors?.tipo && (
+            {/* {errors?.tipo && (
               <p className={styles.errorMessage}>{errors.tipo.message}</p>
-            )}
+            )} */}
             </Grid>
 
             <Grid item xs={12}>
@@ -248,9 +246,9 @@ function Cadastro() {
                   maxLength: { value: 300, message: "URL inválida" },
                 })}
               />
-            {errors?.url && (
+            {/* {errors?.url && (
               <p className={styles.errorMessage}>{errors.url.message}</p>
-            )}
+            )} */}
             </Grid>
           </Grid>
           <div>

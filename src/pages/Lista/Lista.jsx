@@ -13,18 +13,18 @@ function Lista() {
         <img src={imgtrilha} className={styles.imgList} />
         <h1 className={styles.titleList}>Explore trilhas incríveis</h1>
         <div className={styles.container}>
-            {trilhas?.map((trail, index) => (
+            {trilhas?.map((trilha, index) => (
               <CardTrilha
                 key={index}
-                nome={trail.nome}
-                cidade={trail.cidade}
-                estado={trail.estado}
-                duracao={trail.duracao}
-                trajeto={trail.trajeto}
-                dificuldade={trail.dificuldade}
-                tipo={trail.tipo}
-                criador={trail.criador}
-                urlImg={trail.urlImg}
+                nome={trilha.nome}
+                cidade={trilha.cidade}
+                estado={trilha.estado}
+                duracao={trilha.duracao}
+                trajeto={trilha.trajeto}
+                dificuldade={trilha.dificuldade}
+                tipo={trilha.tipo}
+                criador={trilha.criador}
+                urlImg={trilha.url}
               />
             ))}
         </div>
