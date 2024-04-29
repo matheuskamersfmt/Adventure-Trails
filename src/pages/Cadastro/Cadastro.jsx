@@ -10,7 +10,7 @@ function Cadastro() {
   const {
     register,
     handleSubmit,
-    // formState: { errors },
+    formState: { errors },
   } = useForm();
 
   const ufs = [
@@ -89,9 +89,9 @@ function Cadastro() {
                   maxLength: { value: 100, message: "Nome muito longo" },
                 })}
               />
-            {/* {errors?.nome && (
+            {errors?.nome && (
               <p className={styles.errorMessage}>{errors.nome.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={6}>
@@ -106,9 +106,9 @@ function Cadastro() {
                   maxLength: { value: 4, message: "Tempo acima do limite" },
                 })}
               />
-              {/* {errors?.duracao && (
+              {errors?.duracao && (
                 <p className={styles.errorMessage}>{errors.duracao.message}</p>
-              )} */}
+              )}
             </Grid>
 
             <Grid item xs={6}>
@@ -123,9 +123,9 @@ function Cadastro() {
                   maxLength: { value: 5, message: "Trajeto acima do limite" },
                 })}
               />
-            {/* {errors?.trajeto && (
+            {errors?.trajeto && (
               <p className={styles.errorMessage}>{errors.trajeto.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={6}>
@@ -143,9 +143,9 @@ function Cadastro() {
                   },
                 })}
               />
-            {/* {errors?.cidade && (
+            {errors?.cidade && (
               <p className={styles.errorMessage}>{errors.cidade.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={6}>
@@ -167,9 +167,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {/* {errors?.estado && (
+            {errors?.estado && (
               <p className={styles.errorMessage}>{errors.estado.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={6}>
@@ -184,9 +184,9 @@ function Cadastro() {
                   maxLength: { value: 60, message: "Nome muito longo" },
                 })}
               />
-            {/* {errors?.criador && (
+            {errors?.criador && (
               <p className={styles.errorMessage}>{errors.criador.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={6}>
@@ -207,9 +207,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {/* {errors?.dificuldade && (
+            {errors?.dificuldade && (
               <p className={styles.errorMessage}>{errors.dificuldade.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={12}>
@@ -230,9 +230,9 @@ function Cadastro() {
                   </MenuItem>
                 ))}
               </Select>
-            {/* {errors?.tipo && (
+            {errors?.tipo && (
               <p className={styles.errorMessage}>{errors.tipo.message}</p>
-            )} */}
+            )}
             </Grid>
 
             <Grid item xs={12}>
@@ -246,9 +246,9 @@ function Cadastro() {
                   maxLength: { value: 300, message: "URL inválida" },
                 })}
               />
-            {/* {errors?.url && (
+            {errors?.url && (
               <p className={styles.errorMessage}>{errors.url.message}</p>
-            )} */}
+            )}
             </Grid>
           </Grid>
           <div>
